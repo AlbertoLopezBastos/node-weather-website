@@ -12,8 +12,6 @@ const geocode = require('./utils/geocode');
 
 // Express es una funcion, al llamarla te crea el server.
 const app = express();
-
-
 // Configuracion Static y Dynamic que ruteo y directorios -----------
 
 // Dynamic: cambiamos el default path de las views por uno custom
