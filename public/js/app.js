@@ -4,7 +4,7 @@ const messageOne = document.getElementById('message-1');
 const messageTwo = document.getElementById('message-2');
 
 const fetchData = (address) => {
-    fetch(`http://localhost:3000/weather?address=${address}`)
+    fetch(`/weather?address=${address}`)
         .then((response) => {
             return response.json();
         })

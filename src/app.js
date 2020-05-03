@@ -12,6 +12,7 @@ const geocode = require('./utils/geocode');
 
 // Express es una funcion, al llamarla te crea el server.
 const app = express();
+const port = process.env.PORT || 3000;
 // Configuracion Static y Dynamic que ruteo y directorios -----------
 
 // Dynamic: cambiamos el default path de las views por uno custom
@@ -97,7 +98,7 @@ app.get('*', (req, res) => {
 })
 
 // el listen es importante para levantar express en el puerto elegido.
-app.listen(3000, () => {
-    console.log('Server is up on port 3000');
+app.listen(port, () => {
+    console.log(`Server is up on port ${port}`);
 });
 
